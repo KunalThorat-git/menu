@@ -1,0 +1,90 @@
+<div style="background-color: coral;">
+<mat-menu #appMenu="matMenu">
+  <div style="background-color: lightslategrey;">
+    <button mat-menu-item [matMenuTriggerFor]="sub1Menu">Sony-TV</button>
+    <button mat-menu-item [matMenuTriggerFor]="sub2Menu">StarPlus</button>
+    <button mat-menu-item [matMenuTriggerFor]="sub3Menu">Colors</button>
+    <button mat-menu-item [matMenuTriggerFor]="sub4Menu">CN</button>
+    <button mat-menu-item [matMenuTriggerFor]="sub5Menu">Pogo</button>
+    <button mat-menu-item [matMenuTriggerFor]="sub6Menu">9XM</button>
+  </div>
+</mat-menu>
+
+
+ <button mat-icon-button [matMenuTriggerFor]="appMenu">
+  <mat-icon>view_list</mat-icon>
+</button>
+<b>Menu</b> 
+
+<div id="ABC">
+<mat-menu #sub1Menu="matMenu">
+  <div style="background-color: lightslategrey;" >
+  <button mat-menu-item (click)=onClick()>Vighnaharta Ganesh</button>
+  <button mat-menu-item (click)=onGo()>Kaun Banega Crorepati</button>
+  <button mat-menu-item>Indian Idol</button>
+  <button mat-menu-item>CID</button>
+</div>
+</mat-menu>
+
+<div>
+<mat-menu #sub2Menu="matMenu">
+  <div style="background-color: lightslategrey;">
+  <button mat-menu-item>Divya Drishti</button>
+  <button mat-menu-item>Nazar</button>
+  <button mat-menu-item>Sanjivni</button>
+  </div>
+</mat-menu>
+
+<div>
+<mat-menu #sub3Menu="matMenu">
+  <div style="background-color: lightslategrey;">
+  <button mat-menu-item>Bigg Boss 13</button>
+  <button mat-menu-item>Luv Kush</button>
+  <button mat-menu-item>Vish</button>
+  </div>
+</mat-menu>
+
+<div>
+<mat-menu #sub4Menu="matMenu">
+  <div style="background-color: lightslategrey;">
+  <button mat-menu-item>Johnny Bravo</button>
+  <button mat-menu-item>Adventure Time</button>
+  <button mat-menu-item>Tom&Jerry</button>
+  </div>
+</mat-menu>
+
+<div>
+<mat-menu #sub5Menu="matMenu">
+  <div style="background-color: lightslategrey;">
+  <button mat-menu-item>ABC</button>
+  <button mat-menu-item>XYZ</button>
+  <button mat-menu-item>PQR</button>
+  </div>
+</mat-menu>
+
+<div>
+<mat-menu #sub6Menu="matMenu">
+  <div style="background-color: lightslategrey;">
+  <button mat-menu-item>ABC</button>
+  <button mat-menu-item>XYZ</button>
+  <button mat-menu-item>PQR</button>
+  </div>
+</mat-menu>
+</div>
+</div>
+<div id="ch1" >
+<div>
+<b>Details
+<P>{{name}}</P>
+ <p> {{a}}</p>
+ <p> {{time}}</p>
+
+</b>
+</div>
+
+<div *ngIf="true">
+<b>
+  <p>{{KBC}}</p>
+</b>
+</div>
+</div>
